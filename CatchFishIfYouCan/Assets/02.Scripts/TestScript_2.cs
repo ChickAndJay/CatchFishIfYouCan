@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TestScript_2 : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(transform.right * Time.deltaTime * 10, Space.World);
+
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+    }
+
+}
